@@ -3,10 +3,24 @@ import os
 
 app = Flask(__name__)
 
+class Contactos:
+    def _init_(self, name, phone):
+        self.name = name
+        self.phone = phone
+
 
 @app.route('/')
 def index():
-    return jsonify({"Cristian Cardoso": "+5255352121", "Josue Perez": "+525523145463", "Alfonso Monroy": "+525549692841"})
+
+    cris = Contactos("Cristian", "5546372819")
+    lolita = Contactos("Lolita cortez", "7898675436")
+    iron = Contactos("Iron man", "9087965741")
+    list[]
+    list.append[cris]
+    list.append[lolita]
+    list.append[iron]
+    return jsonify(list)
+
 
 
 if __name__ == '__main__':
